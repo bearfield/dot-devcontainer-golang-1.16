@@ -1,4 +1,4 @@
-name: terraform-1.1 docker container image creation
+name: golang-1.16 docker container image creation
 on:
   push:
     branches:
