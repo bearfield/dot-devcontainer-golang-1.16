@@ -23,6 +23,7 @@ ENV GOPATH=/go
 ENV PATH $GOPATH/bin:$PATH
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH
+USER kumano_ryo
 #
 # install gopkgs
 RUN go install github.com/uudashr/gopkgs/v2/cmd/gopkgs@latest
